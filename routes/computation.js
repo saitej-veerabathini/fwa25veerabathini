@@ -6,7 +6,7 @@ router.get('/', (req, res, next) => {
 
     if (Object.keys(req.query).length === 0) {
         console.log("Entered")
-        let rand = math.random()
+        let rand = Math.random()
         res.render(`computation`, { value: `exp applied to ${rand} is ${Math.exp(rand)}` })
     } else
         for (let a in req.query) {
